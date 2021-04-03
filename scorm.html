@@ -22,7 +22,6 @@
             </tr>
             <tr>
                 <td><input id="key" type="text" size="40" value="ad4d3f1d7c7a4d5e8c77972367e8afd4" hidden="hidden"></td>
-
             </tr>
             <tr>
                 <td align="right">Language:</td>
@@ -94,6 +93,27 @@
                     </select>
                     <input id="voiceOutput" type="checkbox" checked>
                     <label for="voiceOutput">voice output</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><b>Speech SDK API Intent Recognition:</b></td>
+                <td>
+                    <button id="speechsdkIntentStartRecognizeOnceAsync">recognizeOnceAsync()</button>
+                    <button id="speechsdkIntentStopRecognizeOnceAsync" disabled="disabled">STOP
+                        recognizeOnceAsync()</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Application ID:</td>
+                <td>
+                    <input id="appId" type="text" size="60" value="YOUR_LANGUAGE_UNDERSTANDING_APP_ID">(only needed for
+                    intent recognition)
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Phrase List Values:</td>
+                <td>
+                    <input id="phrases" type="text" size="60" value="">(';' separated list)
                 </td>
             </tr>
             <tr>
